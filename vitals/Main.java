@@ -2,7 +2,7 @@ package vitals;
 
 public class Main {
     static boolean batteryIsOk(float temperature, float soc, float chargeRate) {
-        boolean tempStatus = temperature >= 0 && tempeature <= 45;
+        boolean tempStatus = temperature >= 0 && temperature <= 45;
         boolean socStatus = soc >= 20 && soc <= 80;
         boolean chargeRateStatus = chargeRate <= 0.8;    
         if(!tempStatus) System.out.println("Temperature out of range");
